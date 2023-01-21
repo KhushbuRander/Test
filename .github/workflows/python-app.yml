@@ -24,7 +24,10 @@ jobs:
       - name: 'Running application under test'
         run: ./node_modules/.bin/http-server -p 8099 &
       - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
-        run: pytest test.py  # See sample test script above
+        run: |
+           pip install pytest
+           pip install pytest-cov
+           pytest test.py
       - name: 'BrowserStackLocal Stop'  # Terminating the BrowserStackLocal tunnel connection
         uses: browserstack/github-actions/setup-local@master
         with:
