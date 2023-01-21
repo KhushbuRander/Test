@@ -1,8 +1,8 @@
 import json
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities as desired_cap
+from selenium.webdriver.chrome.options import Options as ChromeOptions
 import os
 
 userName = os.environ['BROWSERSTACK_USERNAME']
@@ -25,7 +25,7 @@ desired_cap = {
     "browserName" : "Chrome",
     "browserVersion" : "100.0",
     }
-options = Options()
+options = ChromeOptions()
 options.set_capability('bstack:options', bstack_options)
 driver = webdriver.Remote(
     command_executor="https://hub.browserstack.com/wd/hub",
