@@ -12,7 +12,7 @@ buildName = os.environ['BROWSERSTACK_BUILD_NAME']
 projectName = os.environ['BROWSERSTACK_PROJECT_NAME']
 
 desired_cap = {
-    'bstack:options' : {
+    "bstack:options" : {
         "os" : "Windows",
         "osVersion" : "10",
         "buildName" : "BStack Build Name: " + buildName,
