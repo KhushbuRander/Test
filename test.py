@@ -3,8 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-userName = khushburander_ca4jQ5
-accessKey = AnzFx7qCZUyqqSEe42ym
+userName = 'khushburander_ca4jQ5'
+accessKey = 'AnzFx7qCZUyqqSEe42ym'
 localIdentifier = os.environ['BROWSERSTACK_LOCAL_IDENTIFIER']
 buildName = os.environ['BROWSERSTACK_BUILD_NAME']
 projectName = os.environ['BROWSERSTACK_PROJECT_NAME']
