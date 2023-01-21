@@ -4,11 +4,11 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 
-userName = 'khushburander_ca4jQ5'
-accessKey = 'AnzFx7qCZUyqqSEe42ym'
-localIdentifier = 'random'
-buildName = 'test'
-projectName = 'testing'
+userName = os.environ['BROWSERSTACK_USERNAME']
+accessKey = os.environ['BROWSERSTACK_ACCESS_KEY']
+localIdentifier = os.environ['BROWSERSTACK_LOCAL_IDENTIFIER']
+buildName = os.environ['BROWSERSTACK_BUILD_NAME']
+projectName = os.environ['BROWSERSTACK_PROJECT_NAME']
 
 desired_cap = {
     'bstack:options' : {
@@ -18,8 +18,8 @@ desired_cap = {
         "projectName" : "BStack Project Name: " + projectName,
         "localIdentifier": localIdentifier,
         "seleniumVersion" : "4.0.0",
-        "userName": "khushburander_ca4jQ5",
-        "accessKey": "AnzFx7qCZUyqqSEe42ym"
+        "userName": username,
+        "accessKey": accessKey
         },
     "browserName" : "Chrome",
     "browserVersion" : "100.0",
