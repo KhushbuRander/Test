@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.chrome.options import Options
 import time
 
 login_username = "khushbu.rander@gmail.com"
@@ -11,7 +11,7 @@ login_password = "xxxxxxxxx"
 
 driver = webdriver.Remote(
     command_executor='http://localhost:4444/wd/hub',
-    Options=options)
+    options=options)
 
 try:
 	driver.get('https://www.amazon.in/')
