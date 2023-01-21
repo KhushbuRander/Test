@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-userName = os.environ['BROWSERSTACK_USERNAME']
+userName = khushburander_ca4jQ5
 accessKey = os.environ['BROWSERSTACK_ACCESS_KEY']
 localIdentifier = os.environ['BROWSERSTACK_LOCAL_IDENTIFIER']
 buildName = os.environ['BROWSERSTACK_BUILD_NAME']
