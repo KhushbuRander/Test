@@ -11,7 +11,7 @@ login_password = "xxxxxxxxx"
 
 driver = webdriver.Remote(
     command_executor='http://localhost:4444/wd/hub',
-    options=options)
+    Options=options)
 
 try:
 	driver.get('https://www.amazon.in/')
