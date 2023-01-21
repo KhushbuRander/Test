@@ -19,7 +19,7 @@ desired_cap = {
         "projectName" : "BStack Project Name: " + projectName,
         "localIdentifier": localIdentifier,
         "seleniumVersion" : "4.0.0",
-        "userName": username,
+        "userName": userName,
         "accessKey": accessKey
         },
     "browserName" : "Chrome",
