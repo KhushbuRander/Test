@@ -1,15 +1,4 @@
-import json
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-
-# The webdriver management will be handled by the browserstack-sdk
-# so this will be overridden and tests will run browserstack -
-# without any changes to the test files!
-#driver = webdriver.Chrome()
-
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
@@ -32,7 +21,7 @@ desired_cap = {
         },
     "browserName" : "Chrome",
     "browserVersion" : "100.0",
-    } 
+    }
 options = ChromeOptions()
 options.set_capability('bstack:options', bstack_options)
 driver = webdriver.Remote(
