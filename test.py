@@ -1,8 +1,8 @@
-import json
+#import json
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities as desired_cap
-from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+#from selenium.webdriver.chrome.options import Options as ChromeOptions
 import os
 
 userName = os.environ['BROWSERSTACK_USERNAME']
@@ -12,7 +12,7 @@ buildName = os.environ['BROWSERSTACK_BUILD_NAME']
 projectName = os.environ['BROWSERSTACK_PROJECT_NAME']
 
 desired_cap = {
-    "bstack:options" : {
+    'bstack:options' : {
         "os" : "Windows",
         "osVersion" : "10",
         "buildName" : "BStack Build Name: " + buildName,
