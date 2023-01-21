@@ -27,6 +27,7 @@ jobs:
         run: |
            pip install pytest
            pip install pytest-cov
+           pip install selenium
            pytest test.py
       - name: 'BrowserStackLocal Stop'  # Terminating the BrowserStackLocal tunnel connection
         uses: browserstack/github-actions/setup-local@master
