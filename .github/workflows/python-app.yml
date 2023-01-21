@@ -24,7 +24,7 @@ jobs:
       - name: 'Running application under test'
         run: ./node_modules/.bin/http-server -p 8099 &
       - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
-        run: browserstack-sdk python test.py  # See sample test script above
+        run: pytest test.py  # See sample test script above
       - name: 'BrowserStackLocal Stop'  # Terminating the BrowserStackLocal tunnel connection
         uses: browserstack/github-actions/setup-local@master
         with:
