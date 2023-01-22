@@ -27,7 +27,7 @@ desired_cap = {
     }
 options = ChromeOptions()
 MyHashMap<String, Object> bstackoptions = new MyHashMap<String, Object>();
-options.set_capability('bstack:options', bstackoptions)
+options.set_capability('bstack:options', desired_cap)
 driver = webdriver.Remote(
     command_executor="https://hub.browserstack.com/wd/hub",
     options=options)
