@@ -19,6 +19,9 @@ desired_cap = {
     'realMobile': 'true',
     'os_version': '8.1',
     'name': 'Bstack-[Python] Sample Test'
+    "seleniumVersion" : "3.4.0",
+    "userName": khushburander_ca4jQ5,
+    "accessKey": AnzFx7qCZUyqqSEe42ym
 }
 options = webdriver.ChromeOptions()
 #MyHashMap<String, Object> bstackoptions = new MyHashMap<String, Object>();
