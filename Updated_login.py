@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 from browserstack.local import Local
 from selenium.common.exceptions import NoSuchElementException
 
-load_dotenv()
+#load_dotenv()
 BROWSERSTACK_USERNAME = os.environ.get("BROWSERSTACK_USERNAME") or "BROWSERSTACK_USERNAME"
 BROWSERSTACK_ACCESS_KEY = os.environ.get("BROWSERSTACK_ACCESS_KEY") or "BROWSERSTACK_ACCESS_KEY"
 URL = os.environ.get("URL") or "https://hub.browserstack.com/wd/hub"
