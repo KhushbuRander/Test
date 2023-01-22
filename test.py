@@ -17,15 +17,11 @@ desired_cap = {
     'bstack:options' : {
         "os" : "Windows",
         "osVersion" : "10",
-        "buildName" : "BStack Build Name: " + buildName,
-        "projectName" : "BStack Project Name: " + projectName,
-        "localIdentifier": localIdentifier,
-        "seleniumVersion" : "3.4.0",
-        "userName": userName,
-        "accessKey": accessKey
+        "browserVersion" : "latest",
+        "local" : "true",
+        "seleniumVersion" : "3.14.0",
         },
     "browserName" : "Chrome",
-    "browserVersion" : "100.0",
     }
 
 options = webdriver.ChromeOptions()
