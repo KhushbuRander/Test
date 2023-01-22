@@ -24,10 +24,10 @@ desired_cap = {
 }
 options = webdriver.ChromeOptions()
 #MyHashMap<String, Object> bstackoptions = new MyHashMap<String, Object>();
-#options.set_capability('bstack:options', desired_cap)
+options.set_capability('bstack:options', desired_cap)
 driver = webdriver.Remote(
     command_executor="https://khushburander_ca4jQ5:AnzFx7qCZUyqqSEe42ym@hub.browserstack.com/wd/hub",
-    desired_capabilities=desired_cap)
+    options=options)
 driver.get("http://localhost:8099") # HTTP Server should be running on 8099 port of GitHub runner
 print(driver.title)
 driver.quit()
