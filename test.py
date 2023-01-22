@@ -14,14 +14,20 @@ buildName = os.environ['BROWSERSTACK_BUILD_NAME']
 projectName = os.environ['BROWSERSTACK_PROJECT_NAME']
 
 desired_cap = {
-    'browserName': 'android',
-    'device': 'Samsung Galaxy Note 9',
-    'realMobile': 'true',
-    'os_version': '8.1',
-    'name': 'Bstack-[Python] Sample Test',
-    'userName': 'khushburander_ca4jQ5',
-    'accessKey': 'AnzFx7qCZUyqqSEe42ym'
-}
+    'bstack:options' : {
+        "os" : "Windows",
+        "osVersion" : "10",
+        "buildName" : "BStack Build Name: " + buildName,
+        "projectName" : "BStack Project Name: " + projectName,
+        "localIdentifier": localIdentifier,
+        "seleniumVersion" : "3.4.0",
+        "userName": userName,
+        "accessKey": accessKey
+        },
+    "browserName" : "Chrome",
+    "browserVersion" : "100.0",
+    }
+
 options = webdriver.ChromeOptions()
 #MyHashMap<String, Object> bstackoptions = new MyHashMap<String, Object>();
 options.set_capability('bstack:options', desired_cap)
