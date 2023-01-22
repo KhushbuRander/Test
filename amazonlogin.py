@@ -9,9 +9,8 @@ import time
 login_username = "khushbu.rander@gmail.com"
 login_password = "xxxxxxxxx"
 
-driver = webdriver.Remote(
-    command_executor='http://localhost:4444/wd/hub',
-    options=Options)
+driver = webdriver.Chrome("C:\Drivers\chromedriver_win32\chromedriver.exe")
+#driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub',options=Options)
 
 try:
 	driver.get('https://www.amazon.in/')
