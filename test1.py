@@ -9,7 +9,7 @@ from selenium.common.exceptions import NoSuchElementException
 # so this will be overridden and tests will run browserstack -
 # without any changes to the test files!
 #driver = webdriver.Chrome()
-from selenium import webdriver
+#from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
